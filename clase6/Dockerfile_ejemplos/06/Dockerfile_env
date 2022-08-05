@@ -1,0 +1,12 @@
+FROM node:slim
+
+WORKDIR /usr/src/app
+ENV PORT=3000
+
+COPY ./package.json .
+RUN npm install
+
+COPY ./index.js .
+RUN node -v
+
+CMD ["node","index.js"]
