@@ -1,0 +1,70 @@
+Develop: siempre esta mas desarrollado 
+Qa : Una anterior a develop 
+Produccion : una anterior a Qa
+
+por lo general las versiones del software se renombran algo asi 
+[V.1.0.0]
+    *la primera es la version mas grande (major)
+    *algunos complementos                (minor)
+    *el tercer numero es para resolver algun bugs (path)
+
+
+-Cuando el branch master arranco el DEVOPS es el que creo o implemento algo.
+
+-En cada punto deberia haber validadores de codigo estatico (sonarquebe)
+-Fortalecer las buenas practicas de desarrollo con respecto a las ramas : 
+    * nunca deben existir branches de mucho tiempo (desarrollar un script que te diga que tu branch ya lleva mucho tiempo sin pushear)
+    * Si creas un branch y terminas todo lo que desarrollaste, borrar ese nombre de branch
+    * Comit una vez por dia (Generar un commit para que no se olviden de enviar sus cambios)
+    * link para verificar las vulnerabilidades owasp.org
+    * tenemos que colocar y saber los linters de el codigo
+    * los unit Test tambien .
+    * Averiguar  el termino de complex code
+    * generalmente los unit test estan en otra carpeta "Test" y sus  titulos podrian ser algo asi "Test - sumar dos numeros"
+    * Averiguar que significa el test de caja blanca.
+    * para saber lps test de cobertura tenemos que pasarle el script al desarrollador para que lo validen en su propia rama y siempre que lo haga cuando haga los commits.
+    * tener presente tambien en pipeline multibranch para ver ello .
+
+    dll : son paquetes que estan todos sellados .
+
+
+Proceso de como hacer un Build:
+    un script de build debe ser procesado en cualquier lado y debe ser multiprocesor 
+    que pasa si tenemos problemas con dependencias de algun otro proveedor :
+        * Por problemas de networking : (pausa en el build y si no se resuleve se fressea ese build y cuando se resulva entonces se vuelva a ejeutar jenkigs permite eso)
+        * Por Proxy : buscarlo en forma local se descarga por primera vez pero los siguientes ya lo tienes en tu local.
+        * certificados SSL : tener alertas en todo ello .
+        * dependencias Ciclicas 
+        * paquete de ejecutables binarios.
+
+ARTIFACS: 
+============
+    npm (nodejs)
+    Nuget (microsoft)
+    pip(python)
+    jar,jad,jmod(java)
+    Gem(ruby)
+IMAGENES 
+    Docker IMAGENES
+    VMDK, VDI (virtual machine)
+APLICATIVO
+    EXE (windows)
+    War, JAR ,Ear (java)
+    ELF (Linux)
+PAQUETES
+    Deb (linux)
+
+PACKAGING TOOLS
+================
+Librerias
+    npm yarn (Nodejs)
+    dotnet (.Net)
+    python 
+    maven, gradle (java)
+    Gem (Ruby)
+Images
+    Docker CLI
+paquetes
+    Make, DPKG (linux)
+
+
