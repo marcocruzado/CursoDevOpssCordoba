@@ -1,0 +1,10 @@
+Clase 9 : Artifact REpository y Manager with Nexus
+--------------------------------------------------
+
+
+
+
+URLs:
+    https://www.g2.com/categories/repository-management
+    https://www.docker.com/products/docker-desktop/
+    https://docs.docker.com/engine/install/
