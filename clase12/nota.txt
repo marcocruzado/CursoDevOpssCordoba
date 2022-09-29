@@ -1,0 +1,14 @@
+Buidl automation CI/CD - Jenkins |||
+-------------------------------------
+
+# link de docker network_create
+https://docs.docker.com/engine/reference/commandline/network_create/
+
+# link de docker network_connect
+https://docs.docker.com/engine/reference/commandline/network_connect/
+
+#pipeline syntax
+https://www.jenkins.io/doc/book/pipeline/syntax/#pipeline-syntax
+
+#Cron examples
+https://crontab.guru/examples.html
