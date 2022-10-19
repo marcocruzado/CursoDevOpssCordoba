@@ -1,0 +1,7 @@
+clase  Build Automation CI/CD - Github I
+
+link 
+https://github.com/actions/setup-java
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
+https://github.com/actions/setup-java
+https://github.com/Daniel-MundosE/project-test-github
