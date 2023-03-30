@@ -1,0 +1,39 @@
+# Ver la versio de Docker
+docker --version
+
+# HELP de los comandos
+docker --help
+
+# Pero si queresmos la ayuda de un comando en específico, haremos 
+docker comando --help
+
+# Correr el primer nginx ------
+
+
+docker pull nginx		# Explicar lo del default tag latest
+docker pull nginx:1.23.1 	# Explicar mejor con tag
+docker images 			# Para mostrar las imagenes
+				# Explicar la diferencia entre image ID y repository:tag
+
+docker rmi <IMAGE<ID>		# Para borrar la image; pero falla.
+docker rmi nginx:latest		# Explicar que no se borra hasta q se eleminan todos los tags 
+docker rmi nginx:1.23.1		# Por eso este tarda más. Después vamos a ver cada linea 
+docker run  nginx:1.23.1	# Es para correr y lo último es imagen:tag
+
+
+
+docker ps				# Containers corriendo
+docker ps -a				# Todos los containers
+docker start <container_name>		# Volvemos a iniciarlo
+docker ps
+docker stop  <container_name		# Detenerlo
+docker rm	< container_name>  	# Eliminamos
+
+Ahora vamos los modificadores:
+
+docker run d --name nginx-adrabenche nginx:1.23.1 		# Detacho y nombre
+docker run -d  --name nginx-adrabenche -p 80:80 nginx:1.23.1 	# Detacho y nombre
+
+# Ver los logs de forma continua 
+docker logs <container>
+docker logs -f <container>

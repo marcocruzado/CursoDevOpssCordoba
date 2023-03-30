@@ -1,0 +1,3 @@
+links : 
+http://www.brokedba.com/2021/12/kvm-lab-inside-virtualbox-vm-nested.html
+https://killercoda.com/03c2a04a-b662-4e5d-a7a4-addd9faf9c34/scenario/deployJenkins
